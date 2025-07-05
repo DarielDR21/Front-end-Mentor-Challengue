@@ -1,40 +1,60 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
 body {
-    background-color: hsl(30, 18%, 87%);
-    font-family: young-serif;
-    font-size: 1rem;
-    margin: 100px 380px;
+    background-color: hsl(30, 54%, 90%);
+    font-family:  'Outfit', 'Young Serif', sans-serif;
+    line-height: 1.5;
+    margin: 0;
     padding: 0;
-    
+    color:#71685f;
 }
 
 
 .bold {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .container {
-    width: 80%;
-    padding: 30px;
+    width: 45%;
+    margin: 100px auto;
+    padding: 35px;
     background: hsl(0, 0%, 100%);
-    margin: 0 auto;
+    border-radius: 20px;
 }
 
 #omelette {
     max-width: 100%;
     display: block;
     margin: auto;
+    border-radius: 10px;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Young Serif';
+    color: #302d2c;
 }
 
 h2 {
     font-size: 2.5rem;
+    font-family: 'Young Serif';
 }
 
 hr {
-    border: 1px solid #ddd;
+    border: 1px solid #f4f4f4;
 }
 
 #wrapper {
@@ -42,34 +62,52 @@ hr {
 }
 
 #purple-divider {
-    margin-top: 40px;
-    background: hsl(336, 24%, 96%);
-    padding: 10px;
+    margin-top: 30px;
+    background: #fff5fa;
+    padding: 0 5px;
+    border-radius: 10px;
 }
 
 #purple-divider > p {
-    color: purple;
-    font-weight: 800;
+    color: 	#7b284f;
+    font-weight: 700;
     padding: 20px;
     padding-bottom: 8px;
-}
+    font-family: 'Outfit';
+} 
 
 #purple-divider > ul{
     padding-bottom: 15px;
 }
 
 #purple-divider > ul > li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .space-between{
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-#orange-color{
-    color: hsl(14, 45%, 36%)
+.space-between:last-child{
+    padding-bottom: 15px;
 }
+
+
+.orange-color{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+
+}
+
+#instruction-items {
+    padding-left: 25px;
+}
+
+ #instruction-items li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+  }
 
 table {
     border-collapse: collapse;
@@ -77,5 +115,53 @@ table {
 
 td {
     border-bottom: 1px solid #ddd;
-    padding-right: 200px;
+    padding-right: 225px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+tr:last-child td{
+    border-bottom: none;
+}
+
+#instruction-items > li{
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+#instruction-items > li:last-child{
+    margin-bottom: 30px;
+}
+
+section > ol > li {
+    padding-left: 10px;
+}
+
+#nutrition, #instructions, #ingredients {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#instructions {
+    margin-top: 20px;
+}
+
+#preparation{
+    margin-bottom: 0;
+}
+
+#preparation-time{
+    margin-top: 0;
+}
+
+#preparation-time > li{
+    padding-left: 15px;
+    
+}
+
+ul > li::marker, 
+ol > li::marker{
+    font-size: 0.8em;
+    color: #7b284f;
 }
