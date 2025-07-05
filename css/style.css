@@ -1,0 +1,81 @@
+body {
+    background-color: hsl(30, 18%, 87%);
+    font-family: young-serif;
+    font-size: 1rem;
+    margin: 100px 380px;
+    padding: 0;
+    
+}
+
+
+.bold {
+    font-weight: 800;
+}
+
+.container {
+    width: 80%;
+    padding: 30px;
+    background: hsl(0, 0%, 100%);
+    margin: 0 auto;
+}
+
+#omelette {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+#wrapper {
+    overflow-wrap: break-word;
+}
+
+#purple-divider {
+    margin-top: 40px;
+    background: hsl(336, 24%, 96%);
+    padding: 10px;
+}
+
+#purple-divider > p {
+    color: purple;
+    font-weight: 800;
+    padding: 20px;
+    padding-bottom: 8px;
+}
+
+#purple-divider > ul{
+    padding-bottom: 15px;
+}
+
+#purple-divider > ul > li{
+    margin-bottom: 20px;
+}
+
+.space-between{
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+#orange-color{
+    color: hsl(14, 45%, 36%)
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding-right: 200px;
+}
